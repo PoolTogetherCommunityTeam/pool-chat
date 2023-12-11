@@ -1,9 +1,8 @@
-# Iggy Social Template
+# Pool Chat
 
-Iggy Social is a Web3 Social frontend website based on the [Iggy Social](https://iggy.social) template. It uses [Orbis SDK](https://useorbis.com) and [Ceramic Network](https://ceramic.network/) in the background. For usernames it uses [Punk Domains](https://punk.domains/).
+PoolChat is a Web3 Social frontend website for the PoolTogether community based on the [Iggy Social](https://iggy.social) template. It uses [Orbis SDK](https://useorbis.com) and [Ceramic Network](https://ceramic.network/) in the background. For usernames it uses [Punk Domains](https://punk.domains/).
 
-Demo 1 (Netlify): https://demo.iggy.social/
-Demo 2 (Vercel): https://demo2.iggy.social/
+Link: https://chat.pooly.me/
 
 ## Delete mirror.yml in the .github folder
 

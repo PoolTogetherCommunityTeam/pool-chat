@@ -50,14 +50,14 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      activityPointsAddress: "0x7d20A0E75B1ac519f500a51351bcb01A07fE3D7d",
+      activityPointsAddress: "",
       activityPointsRatio: 1_000_000, 
-      airdropApAddress: "0x9Fc55DbA8978406FE212B9C8b4672B4B7a110401", // chat token claim for APs
-      airdropClaimDomainsAddress: "0x3ebDBc1D47d4bFe7D08A58123Ab3c85fC7358831", // chat token claim for domain holders
-      blockExplorerBaseUrl: "https://mumbai.polygonscan.com",
-      chatTokenAddress: "0x83C0E6655Ea65363F8B85954afa29F05e257231b", // chat token address
-      chatTokenImage: "https://bafkreigih3jk3d4fffzml27e7kqyn636t7v646ohxvhv3nzhkzfcmh4prq.ipfs.w3s.link", // chat token image
-      chatTokenSymbol: "CHAT", // chat token symbol or name
+      airdropApAddress: "", // chat token claim for APs
+      airdropClaimDomainsAddress: "", // chat token claim for domain holders
+      blockExplorerBaseUrl: "https://optimistic.etherscan.io",
+      chatTokenAddress: "0x395ae52bb17aef68c2888d941736a71dc6d4e125", // chat token address
+      chatTokenImage: "https://chat.pooly.me/img/pool-token.svg", // chat token image
+      chatTokenSymbol: "POOL", // chat token symbol or name
       domainRequiredToPost: true,
       expiryCollections: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
       expiryUsernames: 1000 * 60 * 60 * 24 * 7, // must be in milliseconds (0 means no expiration)
@@ -66,25 +66,25 @@ export default defineNuxtConfig({
       fileUploadSizeLimit: 1 * 1024 * 1024, // max file upload size in bytes (1 * 1024 * 1024 = 1 MB)
       fileUploadTokenService: process.env.FILE_UPLOAD_SERVICE || "netlify", // "netlify" or "vercel" (or leave empty for no file uploads)
       getPostsLimit: 30, // number of posts to fetch from Orbis in the getPosts() function
-      governanceUrl: "https://snapshot.org/#/sgbchat.eth", // governance url (snapshot, Tally, etc.)
-      iggyPostAddress: "0x63FE8216a66737CFE474DF3949F9081EbD4Bd800",
-      iggyPostMinterAddress: "0xF48D3812ceD80bC78C8553d7C3b702b0F0d63903",
-      iggyPostStatsAddress: "0xFCF878b629fF0Ef3bC033eFfCfFD39B00c9a68C5",
+      governanceUrl: "https://gov.pooltogether.com/", // governance url (snapshot, Tally, etc.)
+      iggyPostAddress: "0x2D4144B4E00cf1dC1c4DeDa37cb1CaCEda030998",
+      iggyPostMinterAddress: "0x99Dbf11aCd46baFBCE82506FaeB4F13E6Ea1726A",
+      iggyPostStatsAddress: "0xce314209aB485bE222CE85F653Ac918f54532503",
       ipfsGateway: "https://cloudflare-ipfs.com/ipfs/",
-      keysAddress: "0x34E7D66455BE3f6f0cCbF3df3b7c56b482530C8E", // FriendKeys contract address 
-      keysContext: "kjzl6cwe1jw14akr2rh1j3fhup1ewfr2uyyd6l85qllbe2d5fxywt7d8rqnau6j",
-      keysFeatured: ["tempe", "tekr"],
+      keysAddress: "", // FriendKeys contract address 
+      keysContext: "kjzl6cwe1jw14bbpho1p8trf30fcwloknxlg4o12yyqf1f16gcy8qsf89bzt8lt",
+      keysFeatured: ["noxe", "tempe", "tekr"],
       linkPreviews: process.env.LINK_PREVIEW_SERVICE || "netlify", // "netlify", "vercel", or "microlink" (or leave empty for no link previews)
-      lpTokenAddress: "0xF874f79eBfB8FEe898a289C4cAa5dc4383873431", // liquidity pool token (token to stake in the staking contract)
+      lpTokenAddress: "", // liquidity pool token (token to stake in the staking contract)
       lpTokenSymbol: "LP tokens", // LP token symbol
-      marketplacePostNftUrl: "https://testnets.opensea.io/assets/mumbai/0x63FE8216a66737CFE474DF3949F9081EbD4Bd800",
-      marketplacePostNftItemUrl: "https://testnets.opensea.io/assets/mumbai/0x63FE8216a66737CFE474DF3949F9081EbD4Bd800/", // url (append nft id to it)
-      marketplaceNftCollectionBaseUrl: "https://testnets.opensea.io/assets/mumbai/", // url (append nft address to it)
-      newsletterLink: "https://paragraph.xyz/@iggy?modal=subscribe",
+      marketplacePostNftUrl: "https://opensea.io/assets/optimism/0x2D4144B4E00cf1dC1c4DeDa37cb1CaCEda030998",
+      marketplacePostNftItemUrl: "https://opensea.io/assets/optimism/0x2D4144B4E00cf1dC1c4DeDa37cb1CaCEda030998/", // url (append nft id to it)
+      marketplaceNftCollectionBaseUrl: "https://opensea.io/assets/optimism/", // url (append nft address to it)
+      newsletterLink: "https://pooltogethercommunity.substack.com/s/community-newsletter",
       nftDefaultRatio: 1, // default ratio for the NFT price bonding curve
-      nftLaunchpadBondingAddress: "0x75A31C8CC0620a535F6d3A6b840D760a31BdBff5", // NFT launchpad with bonding curve contract address
+      nftLaunchpadBondingAddress: "", // NFT launchpad with bonding curve contract address
       nftLaunchpadLatestItems: 4, // number of latest NFTs to show in the NFT launchpad
-      nftOrbisContext: "kjzl6cwe1jw1490l9agydb0vh2x0mddzxbsmga7s3yhl86utbhwne6zkhpikytw", // Orbis context for NFT collection pages
+      nftOrbisContext: "kjzl6cwe1jw149xvb1pc3wjqnqc9xckuhn0ybvaybayssdstzia2cfebu1kdlq7", // Orbis context for NFT collection pages
       orbisCategories: [ // use only alphanumeric ASCII characters for slugs! (no spaces, only dash is allowed)
         { "slug": "all", "title": "All posts", "hidden": false }, // not a real tag, just denotes the absence of a tag (always keep it here)
         { "slug": "general", "title": "General discussion", "hidden": false },
@@ -96,55 +96,55 @@ export default defineNuxtConfig({
         { "slug": "music", "title": "Music", "hidden": true },
         { "slug": "random", "title": "Random", "hidden": false },
       ],
-      orbisContext: "kjzl6cwe1jw14b86b0dwz8x7ribwcn9tsull1bphner0nyfdwxsqnohbtrrvgtl", // production context
+      orbisContext: "kjzl6cwe1jw149uevmi815c06fw6eor47hf44d5zpp7fmqabtchw40m5zipz0zz", // production context
       orbisTest: false, // if true, test context will be used instead of the production one
       orbisTestContext: "kjzl6cwe1jw145tfqv2eqv8tiz6puo27meyz4smz40atppuc13tulqca87k35z2", // test context
-      previewImage: "/img/cover.png",
-      previewImageAirdrop: "/img/cover-airdrop.png",
-      previewImageNftCollection: "/img/cover-nft-collection.png",
-      previewImageNftCreate: "/img/cover-nft-create.png",
-      previewImageNftLaunchpad: "/img/cover-nft-launchpad.png",
-      previewImagePost: "/img/cover-post.png",
-      previewImagePostNft: "/img/cover-post-nft.png",
-      previewImageProfile: "/img/cover-profile.png",
-      previewImageStake: "/img/cover-stake.png",
+      previewImage: "/img/covers/cover.svg",
+      previewImageAirdrop: "/img/covers/cover-airdrop.svg",
+      previewImageNftCollection: "/img/covers/cover-nft-collection.svg",
+      previewImageNftCreate: "/img/covers/cover-nft-create.svg",
+      previewImageNftLaunchpad: "/img/covers/cover-nft-launchpad.svg",
+      previewImagePost: "/img/covers/cover-post.svg",
+      previewImagePostNft: "/img/covers/cover-post-nft.svg",
+      previewImageProfile: "/img/covers/cover-profile.svg",
+      previewImageStake: "/img/covers/cover-stake.svg",
       profileMintedPostIdsMax: 36, // max number of minted post ids to show in the profile page
-      projectMetadataTitle: "Iggy Social Demo | Web3 Social Template For Your DAO",
+      projectMetadataTitle: "Pool Chat | Web3 Social chat for the PoolTogether community",
       projectName: "Iggy Demo",
-      projectDescription: "This is a demo website presenting Iggy Social, a web3 social template for your DAO.",
-      projectTwitter: "https://twitter.com/iggysocial",
-      projectUrl: "https://demo.iggy.social", // without trailing slash!
-      punkMinterAddress: "", // punk domain minter contract address
-      punkNumberOfPrices: 1, // number of different prices (based on domain length), usually 1 (price()) or 5 (price1char() - price5char())
-      punkTldAddress: "0x2582EC420195Fefb091B098da6FAdEE49f490740", // punk domain TLD address
+      projectDescription: "This is a decentralized social chat for the PoolTogether community. Brought to you by Pooly.me and Iggy Social.",
+      projectTwitter: "https://twitter.com/PoolTogether_",
+      projectUrl: "https://chat.pooly.me", // without trailing slash!
+      punkMinterAddress: "0x77AE10Dd2E7Fc7b2819602D483765D705E9B8DDA", // punk domain minter contract address
+      punkNumberOfPrices: 5, // number of different prices (based on domain length), usually 1 (price()) or 5 (price1char() - price5char())
+      punkTldAddress: "0xf2C9E463592BD440f0D422E944E5F95c79404586", // punk domain TLD address
       randomPostsNumber: 1, // number of random post NFTs to show in the sidebar widget
       rpcCustom: process.env.RPC_CUSTOM || "", // Custom RPC URL
       showFeatures: { // show/hide features in sidebars (if you have too many "true", make the sidebar scrollable --> sidebarLeftSticky: false)
-        "activityPoints": true, 
-        "airdrop": true, 
-        "friendKeys": true, 
-        "governance": false,
-        "newsletter": false, 
-        "nftLaunchpad": true, 
+        "activityPoints": false, 
+        "airdrop": false, 
+        "friendKeys": false, 
+        "governance": true,
+        "newsletter": true, 
+        "nftLaunchpad": false, 
         "randomMintedPosts": true, 
-        "swap": true, 
+        "swap": false, 
         "stake": false, 
-        "sendTokens": false, 
+        "sendTokens": true, 
         "spotify": false
       }, 
       showRepliesOnHomepage: true, // show replies on the homepage  
-      sidebarLeftSticky: false, // make the left sidebar sticky (always visible)
+      sidebarLeftSticky: true, // make the left sidebar sticky (always visible)
       spotifyPlaylistId: "5y7f2Wxfq49G5KuNQfMPbk", // enter just the ID of the playlist (not the full URL)  
-      stakingContractAddress: "0x96Dc7548fD018d1E51d2d5e98B265411C3D0F22A", // this is also the stake/gov token address
+      stakingContractAddress: "", // this is also the stake/gov token address
       stakeTokenSymbol: "IGT", // stake token symbol (governance token symbol)
-      supportedChainId: 80001,
+      supportedChainId: 10,
       swapPriceImpactMaxBps: 1000, // max price impact in bips (1 bps = 0.01%, 1000bps = 10%) for the swap function
-      swapRouterAddress: "0x4C4E86135e80790a88cD4a2cA073503647650991", // iggy swap router contract address
+      swapRouterAddress: "", // iggy swap router contract address
       tenorApiKey: process.env.TENOR_KEY || "",
-      tldName: ".testnet",
+      tldName: ".pool",
       tokenAddress: null, // leave null if it's a native token of the chain
       tokenDecimals: 18,
-      tokenSymbol: "MATIC"
+      tokenSymbol: "ETH"
     }
   },
   vite: {
