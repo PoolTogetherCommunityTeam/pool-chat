@@ -30,8 +30,10 @@
 
       <!-- Newsletter -->
       <div v-if="$config.newsletterLink && $config.showFeatures.newsletter" class="card m-2 bg-light">
-        <div class="card-header bg-light">{{ $config.projectName }} Newsletter</div>
+        <div class="card-header bg-light">PoolTogether Newsletter</div>
         <div class="card-body sidebar-card-body">
+          <p class="card-text">Get the latest news and updates from PoolTogether delivered to your inbox.</p>
+
           <a class="btn btn-outline-primary mt-2 mb-2" target="_blank" :href="$config.newsletterLink">
             Join our newsletter!
             <i class="bi bi-box-arrow-up-right ms-1"></i>
