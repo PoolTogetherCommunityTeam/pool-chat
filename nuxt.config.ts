@@ -118,7 +118,7 @@ export default defineNuxtConfig({
       punkNumberOfPrices: 5, // number of different prices (based on domain length), usually 1 (price()) or 5 (price1char() - price5char())
       punkTldAddress: "0xf2C9E463592BD440f0D422E944E5F95c79404586", // punk domain TLD address
       randomPostsNumber: 1, // number of random post NFTs to show in the sidebar widget
-      rpcCustom: process.env.RPC_CUSTOM || "", // Custom RPC URL
+      rpcCustom: process.env.RPC_CUSTOM || "https://rpc.ankr.com/optimism", // Custom RPC URL
       showFeatures: { // show/hide features in sidebars (if you have too many "true", make the sidebar scrollable --> sidebarLeftSticky: false)
         "activityPoints": false, 
         "airdrop": false, 
@@ -140,7 +140,7 @@ export default defineNuxtConfig({
       supportedChainId: 10,
       swapPriceImpactMaxBps: 1000, // max price impact in bips (1 bps = 0.01%, 1000bps = 10%) for the swap function
       swapRouterAddress: "", // iggy swap router contract address
-      tenorApiKey: process.env.TENOR_KEY || "",
+      tenorApiKey: process.env.TENOR_KEY || "AIzaSyCLhy2FZduniivfDWAV7wgpGmSnrXBeq-8",
       tldName: ".pool",
       tokenAddress: null, // leave null if it's a native token of the chain
       tokenDecimals: 18,

@@ -6,6 +6,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     env:  # Environment variables from either organization or repository settings page (for GitHub Actions).
       TENOR_KEY: ${{ secrets.TENOR_KEY }}
     steps:
