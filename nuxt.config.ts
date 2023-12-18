@@ -110,7 +110,7 @@ export default defineNuxtConfig({
       previewImageStake: "/img/covers/cover-stake.svg",
       profileMintedPostIdsMax: 36, // max number of minted post ids to show in the profile page
       projectMetadataTitle: "Pool Chat | Web3 Social chat for the PoolTogether community",
-      projectName: "Iggy Demo",
+      projectName: "Pool Chat",
       projectDescription: "This is a decentralized social chat for the PoolTogether community. Brought to you by Pooly.me and Iggy Social.",
       projectTwitter: "https://twitter.com/PoolTogether_",
       projectUrl: "https://chat.pooly.me", // without trailing slash!
@@ -118,7 +118,7 @@ export default defineNuxtConfig({
       punkNumberOfPrices: 5, // number of different prices (based on domain length), usually 1 (price()) or 5 (price1char() - price5char())
       punkTldAddress: "0xf2C9E463592BD440f0D422E944E5F95c79404586", // punk domain TLD address
       randomPostsNumber: 1, // number of random post NFTs to show in the sidebar widget
-      rpcCustom: process.env.RPC_CUSTOM || "https://rpc.ankr.com/optimism", // Custom RPC URL
+      rpcCustom: process.env.RPC_CUSTOM || "https://mainnet.optimism.io", // Custom RPC URL
       showFeatures: { // show/hide features in sidebars (if you have too many "true", make the sidebar scrollable --> sidebarLeftSticky: false)
         "activityPoints": false, 
         "airdrop": false, 

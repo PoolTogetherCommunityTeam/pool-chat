@@ -3,7 +3,7 @@ export function getRpcs() {
   
   return {
     "1": "https://rpc.ankr.com/eth",
-    "10": "https://rpc.ankr.com/optimism",
+    "10": "https://mainnet.optimism.io",
     "14": "https://flare-api.flare.network/ext/C/rpc",
     "16": "https://coston-api.flare.network/ext/C/rpc",
     "19": "https://songbird-api.flare.network/ext/C/rpc",
