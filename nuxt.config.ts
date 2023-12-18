@@ -99,15 +99,15 @@ export default defineNuxtConfig({
       orbisContext: "kjzl6cwe1jw149uevmi815c06fw6eor47hf44d5zpp7fmqabtchw40m5zipz0zz", // production context
       orbisTest: false, // if true, test context will be used instead of the production one
       orbisTestContext: "kjzl6cwe1jw145tfqv2eqv8tiz6puo27meyz4smz40atppuc13tulqca87k35z2", // test context
-      previewImage: "/img/covers/cover.svg",
-      previewImageAirdrop: "/img/covers/cover-airdrop.svg",
-      previewImageNftCollection: "/img/covers/cover-nft-collection.svg",
-      previewImageNftCreate: "/img/covers/cover-nft-create.svg",
-      previewImageNftLaunchpad: "/img/covers/cover-nft-launchpad.svg",
-      previewImagePost: "/img/covers/cover-post.svg",
-      previewImagePostNft: "/img/covers/cover-post-nft.svg",
-      previewImageProfile: "/img/covers/cover-profile.svg",
-      previewImageStake: "/img/covers/cover-stake.svg",
+      previewImage: "/img/covers/cover.jpg",
+      previewImageAirdrop: "/img/covers/cover-airdrop.jpg",
+      previewImageNftCollection: "/img/covers/cover-nft-collection.jpg",
+      previewImageNftCreate: "/img/covers/cover-nft-create.jpg",
+      previewImageNftLaunchpad: "/img/covers/cover-nft-launchpad.jpg",
+      previewImagePost: "/img/covers/cover-post.jpg",
+      previewImagePostNft: "/img/covers/cover-post-nft.jpg",
+      previewImageProfile: "/img/covers/cover-profile.jpg",
+      previewImageStake: "/img/covers/cover-stake.jpg",
       profileMintedPostIdsMax: 36, // max number of minted post ids to show in the profile page
       projectMetadataTitle: "Pool Chat | Web3 Social chat for the PoolTogether community",
       projectName: "Pool Chat",
