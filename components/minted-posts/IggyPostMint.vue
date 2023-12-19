@@ -17,6 +17,8 @@
 
         <p>
           Minting price: {{ postPrice }} {{ $config.tokenSymbol }}
+          <br />
+          <small class="text-muted"><em>(80% goes to the post author, 13.4% goes to PoolTogether Contributors treasury, and 6.6% goes to the Iggy/Punk Domains team.)</em></small>
         </p>
 
         <div class="form-check">
