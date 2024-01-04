@@ -94,6 +94,10 @@
 
         <IggyPostMint :post="post" :parsedText="parsedText" v-if="isActivated" />
 
+        <span v-if="isActivated" class="cursor-pointer hover-color ms-2" data-bs-toggle="modal" :data-bs-target="'#sendTipModal'+$.uid">
+          <i class="bi bi-tsunami" /> Tip
+        </span>
+
         <span v-if="post.master" class="cursor-pointer hover-color ms-2" data-bs-toggle="modal" :data-bs-target="'#replyModal'+post.stream_id">
           <i class="bi bi-reply" /> Reply
         </span>
@@ -106,6 +110,19 @@
     </div>
   </div>
 
+  <TokenTipModal 
+    :componentId="$.uid" 
+    :masterPostId="post.master" 
+    :recipientDomain="authorDomain" 
+    :recipientAddress="authorAddress" 
+    :repliedPostId="post.stream_id" 
+    :repliedPostTags="post.content.tags" 
+    tokenAddress="0x395ae52bb17aef68c2888d941736a71dc6d4e125" 
+    tokenName="POOL" 
+    tokenSymbol="POOL" 
+    :tokenDecimals="18" 
+    :tokenAmount="1"
+  />
 
   <!-- Reply Modal -->
   <div class="modal fade" :id="'replyModal'+post.stream_id" tabindex="-1" :aria-labelledby="'replyModalLabel'+post.stream_id" aria-hidden="true">
@@ -176,6 +193,7 @@ import ResolverAbi from "~/assets/abi/ResolverAbi.json";
 import resolvers from "~/assets/data/resolvers.json";
 import { useToast } from "vue-toastification/dist/index.mjs";
 import { useUserStore } from '~/store/user';
+import TokenTipModal from "~/components/TokenTipModal.vue";
 import ProfileImage from "~/components/profile/ProfileImage.vue";
 import IggyPostMint from "~/components/minted-posts/IggyPostMint.vue";
 import MintedPostImage from '~/components/minted-posts/MintedPostImage.vue';
@@ -193,7 +211,8 @@ export default {
     ChatQuote,
     IggyPostMint,
     MintedPostImage,
-    ProfileImage
+    ProfileImage,
+    TokenTipModal
   },
 
   data() {
